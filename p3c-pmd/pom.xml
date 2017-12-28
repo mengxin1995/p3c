@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>  
   <groupId>com.alibaba.p3c</groupId>
   <artifactId>p3c-pmd</artifactId>  
-  <version>1.3.0</version>
+  <version>1.3.3</version>
   <packaging>jar</packaging>  
   <name>p3c-pmd</name>  
   <properties>
@@ -88,12 +88,7 @@
       <artifactId>pmd-test</artifactId>  
       <version>${pmd.version}</version>  
       <scope>test</scope> 
-    </dependency>  
-    <dependency> 
-      <groupId>com.alibaba</groupId>  
-      <artifactId>fastjson</artifactId>  
-      <version>1.2.9</version> 
-    </dependency> 
+    </dependency>
   </dependencies>  
   <build> 
     <plugins> 
