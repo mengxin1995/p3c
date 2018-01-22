@@ -20,6 +20,7 @@ import com.alibaba.p3c.idea.inspection.standalone.AliAccessStaticViaInstanceInsp
 import com.alibaba.p3c.idea.inspection.standalone.AliDeprecationInspection
 import com.alibaba.p3c.idea.inspection.standalone.AliMissingOverrideAnnotationInspection
 import com.alibaba.p3c.idea.inspection.standalone.MapOrSetKeyShouldOverrideHashCodeEqualsInspection
+import com.alibaba.p3c.idea.inspection.tuotuo.TuoMissingAcitvityRouteInspection
 import com.alibaba.p3c.pmd.I18nResources
 import com.alibaba.smartfox.idea.common.util.getService
 import com.beust.jcommander.internal.Lists
@@ -71,6 +72,7 @@ class AliLocalInspectionToolProvider : InspectionToolProvider {
         private val CLASS_LIST = Lists.newArrayList<Class<*>>()
         private val nativeInspectionToolClass = arrayListOf<Class<out LocalInspectionTool>>(
                 AliMissingOverrideAnnotationInspection::class.java,
+                TuoMissingAcitvityRouteInspection::class.java,
                 AliAccessStaticViaInstanceInspection::class.java,
                 AliDeprecationInspection::class.java,
                 MapOrSetKeyShouldOverrideHashCodeEqualsInspection::class.java,

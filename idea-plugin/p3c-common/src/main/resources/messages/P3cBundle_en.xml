@@ -55,6 +55,8 @@
     </entry>
     <entry key="com.alibaba.p3c.idea.inspection.rule.AvoidCallStaticSimpleDateFormatRule.errMsg">
         <![CDATA[<code>#ref</code> is unsafe,lock or use local variable #loc]]></entry>
+    <entry key="com.alibaba.p3c.idea.inspection.tuotuo.TuoMissingAcitvityRouteInspection.errMsg">
+        <![CDATA[<code>#ref</code> activity not has route support #loc]]></entry>
     <entry key="com.alibaba.p3c.idea.inspection.rule.NeedBraceRule.errMsg">
         <![CDATA[<code>#ref</code> without braces #loc]]></entry>
     <entry key="com.alibaba.p3c.idea.inspection.rule.AliEqualsAvoidNull.errMsg">

@@ -47,6 +47,8 @@
     </entry>
     <entry key="com.alibaba.p3c.idea.inspection.rule.AvoidCallStaticSimpleDateFormatRule.errMsg">
         <![CDATA[<code>#ref</code> 是非线程安全的，请加锁或者使用局部变量 #loc]]></entry>
+    <entry key="com.alibaba.p3c.idea.inspection.tuotuo.TuoMissingAcitvityRouteInspection.errMsg">
+        <![CDATA[<code>#ref</code> Activity没有加上路由支持 #loc]]></entry>
     <entry key="com.alibaba.p3c.idea.inspection.rule.NeedBraceRule.errMsg">
         <![CDATA[<code>#ref</code> 没有加大括号 #loc]]></entry>
     <entry key="com.alibaba.p3c.idea.inspection.rule.AliEqualsAvoidNull.errMsg">

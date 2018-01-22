@@ -87,14 +87,12 @@ class AliDeprecationInspection : DeprecationInspection, AliBaseInspection {
     class DeprecationInspectionProblemsHolder(private val holder: ProblemsHolder, onTheFly: Boolean) : ProblemsHolder(
             holder.manager, holder.file, onTheFly) {
 
-        override fun registerProblem(psiElement: PsiElement,
-                @Nls(capitalization = Nls.Capitalization.Sentence) descriptionTemplate: String,
+        override fun registerProblem(psiElement: PsiElement, descriptionTemplate: String,
                 fixes: Array<LocalQuickFix>?) {
             holder.registerProblem(psiElement, getMessage(descriptionTemplate), *(fixes ?: emptyArray()))
         }
 
-        override fun registerProblem(psiElement: PsiElement,
-                @Nls(capitalization = Nls.Capitalization.Sentence) descriptionTemplate: String,
+        override fun registerProblem(psiElement: PsiElement, descriptionTemplate: String,
                 highlightType: ProblemHighlightType, fixes: Array<LocalQuickFix>?) {
             holder.registerProblem(psiElement, getMessage(descriptionTemplate), highlightType, *(fixes ?: emptyArray()))
         }
